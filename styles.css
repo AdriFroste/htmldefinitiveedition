@@ -1,0 +1,87 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #000;      /* Negro Borussia */
+  color: #fff;                 /* Texto blanco */
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER con fondo y overlay */
+header {
+  position: relative;
+  background-image: url('https://external-preview.redd.it/k9J6voqwJhGOyG9UgY-oKsVlGevVxpopZ3oxggqMOT8.jpg?auto=webp&s=c8b147a0b2f73d864380e0a6c60856daec03f8f8');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 200px 20px;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+header h1,
+header .tagline,
+header nav {
+  position: relative;
+  z-index: 1;
+  color: #ffd700;             /* Amarillo Borussia */
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+header .tagline {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+nav a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN */
+main {
+  background-color: #fff;
+  color: #333;
+  max-width: 800px;
+  margin: -50px auto 40px;    /* Solapa sobre el header */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+main h2 {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #aaa;
+  background-color: #111;
+}
