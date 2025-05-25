@@ -7,11 +7,15 @@ body {
 }
 
 header {
-  background-color: #6a1b9a;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
+    background-image: url("vegettabanner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+
 
 main {
   padding: 2rem;
